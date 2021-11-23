@@ -8,7 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Museum javescript</h1>
+    <h1 id="kopje">Museum javescript</h1>
+    <p id="mkBlauw">maak achtergrond rood</p>
+    <p id="mkOrange">maak achtergrond orange</p>
 
+    <script>
+        const kopje = document.getElementById("kopje");
+        const mkBlauw = document.getElementById('mkBlauw');
+        const mkOrange = document.getElementById('mkOrange');
+
+        kopje.style.backgroundColor = "red";
+
+        kopje.addEventListener('click',voeruitKopje);
+        mkBlauw.addEventListener('click',voeruitRood);
+        mkOrange.addEventListener('click',voeruitOrange);
+
+        function voeruitKopje(){
+            kopje.style.backgroundColor = "yellow";
+            kopje.style.color = "black"; 
+        }
+
+        function voeruitRood(){
+            document.body.style.backgroundColor = "red"; 
+            document.body.style.color = "white";
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+        }
+
+        function voeruitOrange(){
+            document.body.style.backgroundColor = "orange";
+            document.body.style.color = "green"
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+        }
+
+    </script>
 </body>
 </html>
