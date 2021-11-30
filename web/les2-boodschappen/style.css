@@ -20,6 +20,11 @@ h2{
     margin: 0 0 10px 0; /* top right button left */
 }
 
+.rood{
+    color: mediumblue;
+    
+}
+
 button{
     padding: 10 px 20 px;
     background-color: lightskyblue;
