@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Slideshow gallerij</h1>
+    <div class="button" onClick="onClickNext()">Next image</div>
+    <div class="button" onClick="onClickPrevious()">Previous image</div>
+    <img id="img" src="https://placekitten.com/800/600">
+
+    <script>
+        var postition = 0;
+        var img1 = "https://placekitten.com/800/600";
+        var img2 = "https://placekitten.com/801/600";
+        var img3 = "https://placekitten.com/802/600";
+        var img4 = "https://placekitten.com/803/600";
+        var img5 = "https://placekitten.com/804/600";
+        var img6 = "https://placekitten.com/805/600";
+        var img7 = "https://placekitten.com/806/600";
+        var imgElement = document.getElementById("img");
+        function onClickNext(){
+            
+            postition = postition + 1;
+            
+            if(postition == 7){
+                postition = 0;
+            }
+            console.log("postition is " + postition);
+            setImage();
+
+        }
+        function onClickPrevious(){
+            
+            postition = postition - 1;
+            
+            if(postition == -1){
+                postition = 7;
+            }
+            console.log("postition is " + postition);
+            setImage();
+        }
+        function setImage(){
+            if(postition == 0){
+                imgElement.src = img1;
+            }
+            else if(postition == 1){
+                imgElement.src = img2;
+            }
+            else if(postition == 2){
+                imgElement.src = img3;
+            }
+            else if(postition == 3){
+                imgElement.src = img4;
+            }
+            else if(postition == 5){
+                imgElement.src = img6;
+            }
+            else if(postition == 6){
+                imgElement.src = img7;
+            }
+        }
+    </script>
+</body>
+</html>
