@@ -1,0 +1,9 @@
+body{
+    background-color: lightblue;
+}
+
+#container{
+    background-color: aliceblue;
+    width: 700px;
+    margin: auto;
+}
