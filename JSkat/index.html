@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kat</title>
+</head>
+<body>
+    <script>
+        const kat1= {
+            naam: "Max",
+            leeftijd: "17",
+            foto: "https://placekitten.com/600/600"
+        }
+        console.log(kat1)
+        let nHeader = document.createElement("h1");
+        nHeader.innerHTML =kat1.naam;
+        document.body.appendChild(nHeader);
+        let nHeader2 = document.createElement("h1");
+        nHeader2.innerHTML =kat1.leeftijd;
+        document.body.appendChild(nHeader2);
+        let nHeader3 = document.createElement("img");
+        nHeader3.src =kat1.foto;
+        document.body.appendChild(nHeader3);
+    </script>
+</body>
+</html>
